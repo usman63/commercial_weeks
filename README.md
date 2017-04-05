@@ -22,7 +22,32 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Computes start date and end date for week
+  CommercialWeeks.week_dates(week_num, year)
+
+Computes number of weeks in a year
+  CommercialWeeks.weeks_count(year)
+
+Compute first week of the year
+  CommercialWeeks.get_first_week(year=Time.now.year)
+
+Calculate weeks based the startign and  ending weeks
+  CommercialWeeks.calculate_weeks(start_week, end_week, year)
+
+Calculate previous half year weeks
+  CommercialWeeks.previous_half_year_weeks(year)
+
+Calculate previous half year weeks
+  CommercialWeeks.next_half_year_weeks(year)
+
+Compute weeks  for the year
+  CommercialWeeks.compute_weeks(year=Time.now.year)
+
+Computes week for the given date
+  CommercialWeeks.current_week(current_date)
+
+Compute weeks start date
+  CommercialWeeks.start_date_of_week(date)
 
 ## Development
 

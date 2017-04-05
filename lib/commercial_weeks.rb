@@ -51,11 +51,6 @@ module CommercialWeeks
     [start_date, end_date].join(' - ')
   end
 
-  def self.selected_week(worklog)
-    date = @worklog.date.present? ? @worklog.date : start_date_of_week(Date.today)
-    current_week date
-  end
-
   def self.start_date_of_week(date)
     date.year == date.monday.year ? date.monday : date.beginning_of_year
   end
